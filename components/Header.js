@@ -4,13 +4,13 @@ import Link from "next/link";
 
 function Header() {
   return (
-    <header className="flex justify-between items-center border-b-[0.5px] p-4 border-gray-200">
+    <header className="flex justify-between items-center border-b-[0.5px] p-4 border-gray-50 z-10 relative">
       <div className="relative w-[80px] h-[80px] overflow-hidden">
         <Image src="/assets/images/logo.png" fill alt="logo" />
       </div>
 
       <nav className="hidden md:flex">
-        <ul className="flex items-center space-x-7 font-bold">
+        <ul className="flex items-center space-x-7 font-bold text-white">
           <Link href="/" className="text-xs">
             HOME
           </Link>
@@ -25,7 +25,7 @@ function Header() {
           </Link>
         </ul>
       </nav>
-      <Bars3Icon className="h-8 md:hidden font-bold" />
+      <Bars3Icon className="h-8 md:hidden font-bold text-white" />
     </header>
   );
 }
