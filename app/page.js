@@ -11,9 +11,11 @@ const poppins = Poppins({
 export default function Home() {
   return (
     <main className={poppins.className}>
-      <div className="h-screen relative">
+      <div className="h-screen relative landing ">
         <Header />
-        <h1 className="font-bold text-5xl absolute top-1/3 max-w-[100px] px-6">Launching Soon</h1>
+        <h1 className="font-extrabold text-4xl md:text-7xl absolute top-1/3 max-w-[300px] md:max-w-[650px] px-6">
+          Great things are coming soon
+        </h1>
       </div>
     </main>
   );
